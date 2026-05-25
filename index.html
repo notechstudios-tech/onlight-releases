@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onlight — Flashlight App for Android</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0d0d0d;
+      color: #f0f0f0;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #111;
+      border-bottom: 1px solid #222;
+      padding: 24px 32px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    header span {
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 24px 60px;
+    }
+
+    .hero h2 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      color: #aaa;
+      max-width: 520px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+    }
+
+    .download-btn {
+      display: inline-block;
+      background: #f5c400;
+      color: #111;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 14px 36px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+
+    .download-btn:hover { background: #ffd62e; }
+
+    .version-note {
+      margin-top: 14px;
+      font-size: 0.82rem;
+      color: #555;
+    }
+
+    .features {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 60px 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .feature {
+      background: #161616;
+      border: 1px solid #222;
+      border-radius: 10px;
+      padding: 24px;
+    }
+
+    .feature .icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .feature h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .feature p {
+      font-size: 0.88rem;
+      color: #888;
+      line-height: 1.5;
+    }
+
+    .install {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    .install h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .install ol {
+      padding-left: 20px;
+      color: #aaa;
+      line-height: 2;
+      font-size: 0.95rem;
+    }
+
+    .install ol li a {
+      color: #f5c400;
+    }
+
+    footer {
+      border-top: 1px solid #1a1a1a;
+      text-align: center;
+      padding: 24px;
+      font-size: 0.8rem;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Onlight</h1>
+    <span>by NoTech Studios</span>
+  </div>
+</header>
+
+<section class="hero">
+  <h2>Your flashlight,<br>voice-controlled.</h2>
+  <p>Onlight is a free Android flashlight app with voice commands, strobe effects, speech, and morse code.</p>
+  <a class="download-btn" href="https://github.com/notechstudios-tech/onlight-releases/releases/latest/download/app-release.apk">
+    Download APK
+  </a>
+  <div class="version-note">Android 6.0+ &nbsp;·&nbsp; Free &nbsp;·&nbsp; No ads</div>
+</section>
+
+<section class="features">
+  <div class="feature">
+    <div class="icon">&#127897;</div>
+    <h3>Voice Control</h3>
+    <p>Say "turn on" or "turn off" to control the flashlight hands-free.</p>
+  </div>
+  <div class="feature">
+    <div class="icon">&#9889;</div>
+    <h3>Strobe Effect</h3>
+    <p>Adjustable strobe frequency — control it by voice or slider.</p>
+  </div>
+  <div class="feature">
+    <div class="icon">&#128483;</div>
+    <h3>Speech</h3>
+    <p>Type any text and the app reads it aloud.</p>
+  </div>
+  <div class="feature">
+    <div class="icon">&#9642;&#9643;</div>
+    <h3>Morse Code</h3>
+    <p>Flash any message in morse code with live symbol display.</p>
+  </div>
+</section>
+
+<section class="install">
+  <h2>How to install</h2>
+  <ol>
+    <li><a href="https://github.com/notechstudios-tech/onlight-releases/releases/latest/download/app-release.apk">Download the APK</a> to your Android device.</li>
+    <li>Open your device <strong>Settings → Security</strong> and enable <strong>Install unknown apps</strong> for your browser or Files app.</li>
+    <li>Open the downloaded APK file and tap <strong>Install</strong>.</li>
+    <li>Launch <strong>Onlight</strong> from your app drawer.</li>
+  </ol>
+</section>
+
+<footer>
+  &copy; 2026 NoTech Studios &nbsp;·&nbsp;
+  <a href="https://gist.github.com/notechstudios-tech/cd2a25857e90f913deb28a80f4f3fccd" style="color:#444">Privacy Policy</a>
+</footer>
+
+</body>
+</html>
