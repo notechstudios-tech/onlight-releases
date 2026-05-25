@@ -17,10 +17,16 @@
     header {
       background: #111;
       border-bottom: 1px solid #222;
-      padding: 24px 32px;
+      padding: 20px 32px;
       display: flex;
       align-items: center;
       gap: 16px;
+    }
+
+    header img.icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
     }
 
     header h1 {
@@ -107,6 +113,35 @@
       line-height: 1.5;
     }
 
+    .screenshots {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 24px 60px;
+    }
+
+    .screenshots h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .screenshot-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .screenshot-grid img {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid #222;
+    }
+
+    @media (max-width: 560px) {
+      .screenshot-grid { grid-template-columns: 1fr; }
+    }
+
     .install {
       max-width: 600px;
       margin: 0 auto;
@@ -142,6 +177,7 @@
 <body>
 
 <header>
+  <img class="icon" src="Onlight_icon.png" alt="Onlight icon" />
   <div>
     <h1>Onlight</h1>
     <span>by NoTech Studios</span>
@@ -177,6 +213,14 @@
     <div class="icon">&#9642;&#9643;</div>
     <h3>Morse Code</h3>
     <p>Flash any message in morse code with live symbol display.</p>
+  </div>
+</section>
+
+<section class="screenshots">
+  <h2>Screenshots</h2>
+  <div class="screenshot-grid">
+    <img src="screenshot1.png" alt="Onlight main screen — flashlight ON" />
+    <img src="screenshot2.png" alt="Onlight morse code mode" />
   </div>
 </section>
 
